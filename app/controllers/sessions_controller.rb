@@ -21,7 +21,7 @@ class SessionsController
       @view.incorrect_credentials
       login
     end
-        # if correct, welcome and login
+    # if correct, welcome and login
     # view: wrong credentials, ask to try again
   end
 

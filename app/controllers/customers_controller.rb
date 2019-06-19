@@ -1,18 +1,18 @@
 require_relative '../views/customers_view'
 
 class CustomersController
-  def initialize(customers_repo)
-    @customers_repo = customers_repo
+  def initialize(customers_repository)
+    @customers_repository = customers_repository
     @view = CustomersView.new
   end
 
   def list
     # get all customers
     # displays all customers to user
-    @view.display(@customers_repo.all)
+    @view.display(@customers_repository.all)
   end
 
-  # create new customer and add to repo
+  # create new customer and add to repository
   def add
     # ask user for name and price
     attributes = {
@@ -20,7 +20,7 @@ class CustomersController
       address: @view.ask_for_string(:address)
     }
     # make new customer object
-    # pass that to the repo
-    @customers_repo.add(Customer.new(attributes))
+    # pass that to the repository
+    @customers_repository.add(Customer.new(attributes))
   end
 end

@@ -16,7 +16,6 @@ class MealRepository < BaseRepository
   # because they require a bit more work to refactor.
   # You're free to try to inherit them, but finish
   # the exercise first.
-
   def load_csv
     options = { headers: :first_row, header_converters: :symbol }
 

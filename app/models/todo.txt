@@ -1,7 +1,11 @@
-Meals:
-List all meals
-Add new meal
+As a manager I can:
+  List all meals              X
+  Add a new meals             X
+  List all customers          X
+  Add a new customers         X
+  List all undelivered orders
+  Add an order
 
-Customers:
-List all customers
-Add new customer
+As a delivery guy I can
+  List MY undelivered orders
+  Mark an order as delivered
