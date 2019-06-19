@@ -1,0 +1,7 @@
+Meals:
+List all meals
+Add new meal
+
+Customers:
+List all customers
+Add new customer
